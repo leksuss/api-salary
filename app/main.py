@@ -1,19 +1,11 @@
 import uvicorn
 from fastapi import FastAPI
-from sqlalchemy import create_engine
 
-from config import settings
+from app.api.users import router as users_router
 
-app = FastAPI()
-db = create_engine(settings.DATABASE_URL)
+fastapi_app = FastAPI()
 
-@app.on_event("startup")
-def startup_database():
-    return db.connect()
-
-@app.on_event("shutdown")
-def shutdown_database():
-    return db.dispose()
+fastapi_app.include_router(users_router, prefix="/users", tags=["users"])
 
 if __name__ == '__main__':
-    uvicorn.run(app, host='0.0.0.0', port=80)
+    uvicorn.run(fastapi_app, host='127.0.0.1', port=8080)
