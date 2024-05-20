@@ -16,7 +16,7 @@
 
 Склонировать репозиторий и войти в папку проекта:
 ```bash
-git@hub.mos.ru:leksus/api-salary.git
+git clone git@hub.mos.ru:leksus/api-salary.git
 cd api-salary
 ```
 
@@ -73,4 +73,4 @@ make seed_db
 
 ## Цель создания
 
-Это реализация тестового задания на курс Python для ЦФТ ШИФТ
+Это реализация [тестового задания](https://hub.mos.ru/leksus/api-salary/-/blob/main/SHIFT_ML_Python_TestTask.pdf) на курс Python для ЦФТ ШИФТ
