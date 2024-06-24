@@ -16,7 +16,7 @@
 
 Склонировать репозиторий и войти в папку проекта:
 ```bash
-git clone git@hub.mos.ru:leksus/api-salary.git
+git clone git@github.com:leksuss/api-salary.git
 cd api-salary
 ```
 
@@ -65,7 +65,7 @@ make seed_db
 
 В базе данных находятся три тестовых пользователя, формат логин / пароль:
  - 123@123.ru / 123
- - 456@456@.ru / 456
+ - 456@456.ru / 456
  - 789@789.ru / 789
 
 Для тестирования приложения необходимо сначала залогиниться в приложение, получив JWT-токен, а затем обратиться к эндпоинту `/salary` с этим токеном для получения приватной информации
@@ -73,4 +73,4 @@ make seed_db
 
 ## Цель создания
 
-Это реализация [тестового задания](https://hub.mos.ru/leksus/api-salary/-/blob/main/SHIFT_ML_Python_TestTask.pdf) на курс Python для ЦФТ ШИФТ
+Это реализация [тестового задания](https://github.com/leksuss/api-salary/blob/main/SHIFT_ML_Python_TestTask.pdf) на курс Python для ЦФТ ШИФТ
